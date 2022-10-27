@@ -4,15 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deployment Setup
 
-Static rendering:
-https://www.antoinebernard.com/create-a-static-website-with-angular/
-https://angular.io/guide/universal
-https://angular.io/guide/prerendering
+Use angular pre-rendering, this allows to serve a static site.
 
-Github pages:
-https://gist.github.com/joshuapekera/ef364073b01fb0e21d3f
+Currently we use [netfly](), note that set `NODE_ENVIRONMENT` in netfly to `17.16.1` due to an angular
+build issue (with pre-rendering).
+
 
 > Dynamic routes can be added as well, see [doc](https://angular.io/guide/prerendering)
+
+> Note, if adding routes is an issue, fall back to using `npm run build` and server non static SPA.
 
 ## Deployment strategy
 
@@ -20,18 +20,7 @@ On push to `master` execute `npm run prerender`.
 
 ## TODO before deploy
 
-- [ x ] Home
-- [ x ] Service
-- [ x ] Training
-- [ x ] Products
-- [ x ] Contact
-- [ x ] Check spelling errors
-- [ x ] Clean unused images
-- [ x ] Swiss logo icon on the website link (png?)
-- [ x ] SEO (Search Engine Optimization) / CMS
-- [ ] Run on OSx and change path for unix os
-- [ ] Deploy using github (can also serve to custom DNS)
-- [ ] Add github actions to pre-render
+- [ ] Setup Netfly custom domain.
 
 ## Feature request (sorted by importance)
 
