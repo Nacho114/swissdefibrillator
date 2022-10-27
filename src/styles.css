@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+
+:root {
+  --global-color-primary: #c70b15;
+  --global-color-secondary: #f74247;
+  --global-color-light: #f6f7f8;
+  --global-color-gray: #565758;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fancy-h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--global-color-primary);
+}
+
+/* css style for container of a page (e.g. Home, Products, ...). */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  font-size: 24px;
+  background-color: var(--global-color-secondary);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,27 +1,45 @@
-# Siwssdef
+# Swiss Defibrillator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Deployment Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Static rendering:
+https://www.antoinebernard.com/create-a-static-website-with-angular/
+https://angular.io/guide/universal
+https://angular.io/guide/prerendering
 
-## Code scaffolding
+Github pages:
+https://gist.github.com/joshuapekera/ef364073b01fb0e21d3f
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Dynamic routes can be added as well, see [doc](https://angular.io/guide/prerendering)
 
-## Build
+## Deployment strategy
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+On push to `master` execute `npm run prerender`.
 
-## Running unit tests
+## TODO before deploy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [ x ] Home
+- [ x ] Service
+- [ x ] Training
+- [ x ] Products
+- [ x ] Contact
+- [ x ] Check spelling errors
+- [ x ] Clean unused images
+- [ x ] Swiss logo icon on the website link (png?)
+- [ x ] SEO (Search Engine Optimization) / CMS
+- [ ] Run on OSx and change path for unix os
+- [ ] Deploy using github (can also serve to custom DNS)
+- [ ] Add github actions to pre-render
 
-## Running end-to-end tests
+## Feature request (sorted by importance)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [ ] Google ad words
+- [ ] Mobile friendly
+- [ ] Multi language support i18 (or add simple lang interface)
+- [ ] Dynamic page creation per product, good [example](https://shop.vnbeans.com/products/hung-farm-washed-officially-the-best-vietnamese-specialty-coffee)
+- [ ] Nicer images (e.g. Certification image)
+- [ ] Pick a good Font
+- [ ] Add search bar in products and filter items
+- [ ] Analyze SEO
